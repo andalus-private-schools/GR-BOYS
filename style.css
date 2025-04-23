@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('background-2025.jpg'); /* غيّر الاسم حسب الصورة عندك */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.countdown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.time-box {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 80px;
+  transition: all 0.3s ease-in-out;
+}
+
+.time-box span {
+  font-size: 2em;
+  display: block;
+}
+
+.time-box p {
+  margin: 5px 0 0;
+  font-size: 0.9em;
+}
+
+/* لجعلها مناسبة للجوال */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+    margin: 10px 0;
+  }
+
+  p {
+    font-size: 1em;
+    padding: 0 10px;
+    line-height: 1.5;
+  }
+
+  .countdown {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .time-box {
+    padding: 10px;
+    min-width: 100px;
+  }
+
+  .time-box span {
+    font-size: 1.5em;
+  }
+
+  .time-box p {
+    font-size: 0.9em;
+  }
+}
